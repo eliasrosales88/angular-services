@@ -1,1 +1,7 @@
-<p>component-a works!</p>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="item">Add item</span>
+    </div>
+    <input [(ngModel)]="input" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<button class="col-xs-12 btn btn-primary" (click)="onAdd()">Add Item</button>

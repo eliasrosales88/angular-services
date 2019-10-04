@@ -15,7 +15,7 @@
     <div class="col-xs-12 col-md-6 border">
       <div class="col-xs-12 border">
         <h3>Componente A</h3>
-        <app-component-a></app-component-a>
+        <app-component-a (list)="getItem($event)"></app-component-a>
       </div>
       <div class="col-xs-12 border">
         <h3>Componente B</h3>
@@ -24,6 +24,10 @@
     </div>
     <div class="col-xs-12 col-md-6 border">
       <h3>Servicio</h3>
+      <ul class="list-group">
+          <li *ngFor="let item of list" class="list-group-item">{{item}}</li>
+         
+        </ul>
     </div>
   </div>
 </div>
