@@ -1,33 +1,40 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active text-white" href="#">Home <span class="sr-only">(current)</span></a>
-    </div>
-  </div>
+  <a class="navbar-brand text-white" href="#">Servicios Angular</a>
 </nav>
 <div class="container">
-  
+  <br>
+  <h2>Ejemplo de servicio simple</h2>
+  <hr class="border border-dark">
   <div class="row">
     <div class="col-xs-12 col-md-6 border">
+      <br>
       <div class="col-xs-12 border">
         <h3>Componente A</h3>
         <app-component-a (list)="getItem($event)"></app-component-a>
       </div>
+      <br>
       <div class="col-xs-12 border">
         <h3>Componente B</h3>
+        <p>Usa el servicio "Lista" creado</p>
         <app-component-b></app-component-b>
       </div>
+      <br>
     </div>
     <div class="col-xs-12 col-md-6 border">
-      <h3>Servicio</h3>
+      <h3>Servicio Lista</h3>
+      <p>Este servicio almacena o enpuja(push) items en una lista.</p>
       <ul class="list-group">
           <li *ngFor="let item of list" class="list-group-item">{{item}}</li>
-         
         </ul>
+    </div>
+  </div>
+  <hr class="border border-dark">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      
+    </div>
+    <div class="col-xs-12 col-md-6">
+
     </div>
   </div>
 </div>

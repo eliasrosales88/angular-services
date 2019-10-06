@@ -8,6 +8,11 @@ export class ListService {
   constructor() { }
 
   addToList(item) {
+
+    if (item === undefined || item === "") {
+      return;
+    }
+    
     this.items.push(item);
 
     console.log(this.items);
